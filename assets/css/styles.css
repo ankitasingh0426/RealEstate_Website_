@@ -1,12 +1,12 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&family=Roboto:wght@300&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
+/*variable_css*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /*colors*/
+ 
   --first-color: hsl(160, 66%, 45%);
   --first-color-alt: hsl(164, 66%, 47%);
   --first-color-light: hsl(178, 65%, 61%);
@@ -19,7 +19,7 @@
   --body-color: #fff;
   --container-color: #fff;
 
-  /*========== Font and typography ==========*/
+  /*fonts_section*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Roboto', sans-serif;
   --biggest-font-size: 2.25rem;
@@ -30,16 +30,16 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*font_weight*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  /*z-index*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+
 @media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 4rem;
@@ -52,7 +52,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/*base*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -97,7 +97,7 @@ button {
   border: none;
 }
 
-/*=============== THEME ===============*/
+/*theme_section*/
 .change-theme{
   font-size: 1.25rem;
   color: #fff;
@@ -109,22 +109,19 @@ button {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
-/* body .dark-theme{
+/* variable_dark_theme*/
+ body .dark-theme{
   --first-color: rgb(79, 167, 183);
   --second-color:rgb(107, 54, 151);
   --title-color:hsl(228,8%,95%);
   --text-color: hsl(228,8%,70%);
   --border-color: hsl(228,16%,14%);
   --container-color: hsl(228,16%,12%);
-} */
+} 
 
 
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
-/* .dark-theme .home__search,
+/*dark_theme_section*/
+ .dark-theme .home__search,
 .dark-theme .swipe-button-next,
 .dark-theme .swiper-button-prev{
   border: 3px solid var(--border-color);
@@ -170,7 +167,7 @@ button {
 }
 .dark-theme::webkit-scrollbar-thumb:hover{
   background-color: rgb(7, 190, 190);
-} */
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -205,7 +202,7 @@ button {
   overflow: hidden; /* For the animations ScrollReveal*/
 }
 
-/*=============== HEADER & NAV ===============*/
+/* header */
 .header{
     position: fixed;
     top:0;
@@ -216,6 +213,7 @@ button {
     transition: .4s;
 
 }
+/* nav */
 .nav{
     height:var(--header-height);
     display: flex;
@@ -270,7 +268,7 @@ button {
     
 }
 
-/* Change background header */
+/* change_background_header */
 .scroll-header{
   background-color: var(--body-color);
   box-shadow: 0 1px 4px hsla(228, 4% ,15% , .1);
@@ -282,7 +280,7 @@ button {
 .scroll-header .change-theme{
   color: var(--title-color);
 }
-/* Active link */
+/* active_links */
 active-link{
   background : linear-gradient(101deg,
                        rgb(34, 171, 161),
@@ -292,7 +290,7 @@ active-link{
 }
 
 
-/*=============== HOME ===============*/
+/* home */
 /* .home{
   background: linear-gradient(170deg,
   hsl(0,0%,22%) 0%, 
@@ -386,7 +384,7 @@ column-gap: 2.5rem;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
 }
 
-/*=============== BUTTON ===============*/
+/* button_section */
 .button{
   display: inline-block;
   background: linear-gradient(101deg,
@@ -410,7 +408,7 @@ column-gap: 2.5rem;
   display: none;
 }
 
-/*=============== LOGOS ===============*/
+/* logos_section */
 .logos__container{
   padding-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -491,7 +489,7 @@ column-gap: 2.5rem;
   right: calc(50% - 3rem);
 }
 
-/*=============== VALUE ===============*/
+/* value_section */
 .value__container{
   row-gap: 3rem;
 }
@@ -585,7 +583,7 @@ column-gap: 2.5rem;
 }
 
 
-/*=============== CONTACT ===============*/
+/* contact_section */
 .contact__container{
   row-gap: 2rem;
 }
@@ -667,7 +665,7 @@ column-gap: 2.5rem;
 .contact__card-box:hover{
   box-shadow: 0 8px 24px hsla(228 , 66% , 45% , .1);
 }
-/*=============== SUBSCRIBE ===============*/
+/* subscribe_section */
 .subscribe{
   padding: 2.5rem 0;
 }
@@ -702,7 +700,7 @@ column-gap: 2.5rem;
   background-color: var(--first-color);
 }
 
-/*=============== FOOTER ===============*/
+/* footer_section */
 .footer__container{
   row-gap: 2.5rem;
 }
@@ -834,7 +832,7 @@ column-gap: 2.5rem;
   bottom: 8rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* adjustments for differnt devices */
 
 /* For small devices */
 @media  screen and (min-width: 576px) 
@@ -1090,7 +1088,7 @@ column-gap: 2.5rem;
   
   
   }
-  /* for 2k 4k devices */
+ 
 @media screen and(min-width: 2048px){
   body{
     zoom:1.5;
