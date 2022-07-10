@@ -16,23 +16,32 @@
         <!--css-->
         <link rel="stylesheet" href="assets\css\styles.css">
 
+        <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
         <title>HomePros</title>
     </head>
     <body>
         <!--header_section-->
-        <header class="header" id="header">
+        <header class="header" id="header" style="font-size: 15px;">
+            <div class="container_main">
             <nav class="nav container">
                 <a href="#" class="nav__logo"> 
                     HomePros <i class='bx bxs-building-house'></i>
+                    
                 </a>
+                <div style="display: flex; align-items: center;">
                 <div class="nav__menu">
-                    <ul class="nav__list">
+
+                    <ul class="nav__list" >
                         <li class="nav__item">
                             <a href="#home" class="nav__link">
                                 <i class='bx bx-home'></i>
-                                <span>
-                                 Home
-                                </span>
+                                <span style="text-decoration: none;">Home</span>
+                                   
+                                 
+                                
                             </a>
                         </li>
                         <li class="nav__item">
@@ -67,10 +76,15 @@
 
                     <!-- theme change button -->
                     <!-- <i class='bx bx-moon change-theme' id="theme-button" ></i> -->
-                <a href="#" class="button nav__button">
-                     Login /Sign Up
-                </a>
+                </div>
             </nav>
+
+            <a href="#" class="button nav__button" style=" margin-left:677px; display:flex; align-items: center;" >
+                <div>Login/SignUp</div>
+                
+               
+           </a>
+        </div>
         </header>
 
         <!--main-->
@@ -93,7 +107,8 @@
                             <button class="button">Search</button>
                             
                         </form>
-                        <div class="home__value">
+                        
+                         <div class="home__value">
                             <div>
                            <h1 class="home__value-number">
                              5K <span>+</span>
@@ -117,7 +132,7 @@
                              <span class="home__value-description">
                                Happy <br> Clients
                              </span>
-                         </div>
+                         </div> 
                         </div>
                     </div>
                     <div class="home__images">
@@ -130,7 +145,7 @@
             </section>
 
             <!--logos_section-->
-            <section class="logos section">
+            <!-- <section class="logos section">
                 <div class="logos__container container grid">
                     <div class="logos__img">
                         <img src="assets\img\logo7.png" alt="">
@@ -145,7 +160,7 @@
                         <img src="assets\img\logo6.png" alt="">
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--popular_section-->
             <section class=" popular section" id="popular">
@@ -269,7 +284,7 @@
                                 <header class="value__accordion-header">
                                     <i class='bx bx-check-shield value__accordion-icon' ></i>
                                     <h3 class="value__accordion-title">
-                                      Best interest rates in the Market
+                                      Best rates in the Market
                                     </h3>
                                     <div class="value__accordion-arrow">
                                         <i class='bx bx-chevrons-down'></i>
@@ -286,7 +301,7 @@
                                 <header class="value__accordion-header">
                                     <i class='bx bxs-x-square'></i>
                                     <h3 class="value__accordion-title">
-                                      Prevent Unstable Rates
+                                      No sudden price hike
                                     </h3>
                                     <div class="value__accordion-arrow">
                                         <i class='bx bx-chevrons-down'></i>
@@ -336,10 +351,61 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+                    <!-- <div class="home__value">
+                        <div>
+                            <h1 class="journey">
+                            JOURNEY SO FAR.....!!!
+                            </h1>
+                        </div>
+                        <div>
+                       <h1 class="home__value-number">
+                         3K+
+                       </h1>
+                        <span class="home__value-description">
+                          Premium <br> Products
+                        </span>
+                    </div>
+                    <div>
+                        <h1 class="home__value-number">
+                          8K+
+                        </h1>
+                         <span class="home__value-description">
+                           Award <br> Winning properties
+                         </span>
+                     </div>
+                     <div>
+                        <h1 class="home__value-number">
+                          2K+
+                        </h1>
+                         <span class="home__value-description">
+                           Happy <br> Clients
+                         </span>
+                     </div> -->
                    </div> 
             </section>
-
+            <section class="logos section">
+                <div>
+                    <h1  class="sponsors" style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+                    OUR PARTNERS:
+                </h1>
+                </div>
+                <div class="logos__container container grid">
+                    <div class="logos__img">
+                        <img src="assets\img\logo7.png" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="assets\img\logo8.jpg" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="assets\img\logo5.png" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="assets\img\logo6.png" alt="">
+                    </div>
+                </div>
+            </section>
             <!--contact_section-->
             <section class="contact section" id="contact">
                 <div class="contact__container container grid">
@@ -457,8 +523,8 @@
                         HomePros <i class='bx bxs-home'></i>
                     </a>
                     <p class="footer__description">
-                    The goal is to provide the <br>
-                    experience of a lifetime.
+                    Our vision is to make all people <br>
+                    the best place to live for them.
                 </p>
                 </div>
                 <div class="footer__content">
@@ -474,7 +540,7 @@
                                 <a href="#" class="footer__link">Features</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Latest Offers</a>
+                                <a href="#" class="footer__link">News and BLog</a>
                             </li>
                         </ul>
                     </div>
@@ -486,13 +552,13 @@
                         </h3>
                         <ul class="footer__links">
                             <li>
-                                <a href="#" class="footer__link">Overview</a>
+                                <a href="#" class="footer__link">How We Work?</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Registered Members</a>
+                                <a href="#" class="footer__link">Captital</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Guidelines</a>
+                                <a href="#" class="footer__link">Security</a>
                             </li>
                         </ul>
                     </div>
@@ -559,5 +625,10 @@
 
         <!--main_js-->
         <script src="assets\js\main.js"></script>
+        <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     </body>
 </html>
